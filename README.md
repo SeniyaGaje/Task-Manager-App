@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Task Manager Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Trello-inspired task management application built with React, featuring boards, lists, and tasks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse boards from the main page
+- View detailed board with multiple task lists
+- Add, edit, move, and delete tasks
+- Mark tasks as favorites and see favorite count
+- Toggle between light and dark themes
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### React and React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Used React for building the UI components
+- Implemented React Router v6 for navigation between pages
+- Created routes for boards list (/boards) and individual boards (/boards/:id)
 
-### `npm test`
+### Ant Design and SCSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Utilized Ant Design components for UI elements (Card, Button, Modal, Form, etc.)
+- Created custom SCSS styling for a clean, professional look
+- Implemented responsive design for different screen sizes
 
-### `npm run build`
+### State Management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Used `useReducer` for managing complex board state
+- Created actions for task operations (add, update, move, delete)
+- Maintained favorite tasks count across the application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Custom Hooks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Created `useBoardApi` hook to handle API requests and manage loading/error states
+- Simplified component code by abstracting API logic
 
-### `npm run eject`
+### Mock API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Implemented a mock API service to simulate backend functionality
+- Created methods for all CRUD operations (GET, POST, PUT, DELETE)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Extra Feature
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I implemented the **Board Theme** feature, allowing users to toggle between light and dark modes. The implementation includes:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Theme toggle button in the board header
+- CSS variables for theme colors
+- Smooth transitions between themes
+- Persistence of theme preference using React state
 
-## Learn More
+## Design Decisions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Component Structure**:
+   - Separated concerns into distinct components (Board, TaskList, TaskCard)
+   - Used container/presentational pattern for better code organization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Task Operations**:
+   - Provided intuitive UI for task management
+   - Implemented confirmation dialogs for destructive actions
+   - Added visual feedback for favorite tasks
 
-### Code Splitting
+3. **User Experience**:
+   - Created smooth animations for card interactions
+   - Implemented responsive design for mobile and desktop
+   - Used consistent styling based on Jira/Trello inspiration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Code Organization**:
+   - Separated styles into component-specific SCSS files
+   - Used SCSS variables and mixins for consistent theming
+   - Implemented clean, documented code with clear naming conventions
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
