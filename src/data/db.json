@@ -77,7 +77,7 @@
       "listId": 1,
       "title": "Clean the house",
       "description": "Vacuum and mop the floors",
-      "isFavorite": true,
+      "isFavorite": false,
       "order": 1
     },
     {
@@ -91,15 +91,15 @@
     {
       "id": 4,
       "listId": 3,
-      "title": "Call mom",
-      "description": "Check in with mom",
+      "title": "Call friend",
+      "description": "Check in with friend",
       "isFavorite": true,
       "order": 0
     },
     {
       "title": "run",
       "description": "",
-      "listId": 6,
+      "listId": 4,
       "isFavorite": false,
       "order": 0,
       "id": 5
