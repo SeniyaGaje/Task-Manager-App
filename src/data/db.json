@@ -1,0 +1,108 @@
+{
+  "boards": [
+    {
+      "id": 1,
+      "name": "Personal Tasks",
+      "description": "My personal task board",
+      "theme": "light"
+    },
+    {
+      "id": 2,
+      "name": "Work Projects",
+      "description": "Team collaboration board",
+      "theme": "light"
+    },
+    {
+      "id": 3,
+      "name": "Learning Goals",
+      "description": "Track my learning progress",
+      "theme": "light"
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "boardId": 1,
+      "title": "To Do",
+      "order": 0
+    },
+    {
+      "id": 2,
+      "boardId": 1,
+      "title": "In Progress",
+      "order": 1
+    },
+    {
+      "id": 3,
+      "boardId": 1,
+      "title": "Done",
+      "order": 2
+    },
+    {
+      "id": 4,
+      "boardId": 2,
+      "title": "Backlog",
+      "order": 0
+    },
+    {
+      "id": 5,
+      "boardId": 2,
+      "title": "Sprint",
+      "order": 1
+    },
+    {
+      "id": 6,
+      "boardId": 2,
+      "title": "Review",
+      "order": 2
+    },
+    {
+      "id": 7,
+      "boardId": 2,
+      "title": "Completed",
+      "order": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "listId": 1,
+      "title": "Buy groceries",
+      "description": "Milk, eggs, bread, and fruits",
+      "isFavorite": false,
+      "order": 0
+    },
+    {
+      "id": 2,
+      "listId": 1,
+      "title": "Clean the house",
+      "description": "Vacuum and mop the floors",
+      "isFavorite": true,
+      "order": 1
+    },
+    {
+      "id": 3,
+      "listId": 2,
+      "title": "Write report",
+      "description": "Finish the quarterly report",
+      "isFavorite": false,
+      "order": 0
+    },
+    {
+      "id": 4,
+      "listId": 3,
+      "title": "Call mom",
+      "description": "Check in with mom",
+      "isFavorite": true,
+      "order": 0
+    },
+    {
+      "title": "run",
+      "description": "",
+      "listId": 6,
+      "isFavorite": false,
+      "order": 0,
+      "id": 5
+    }
+  ]
+}
